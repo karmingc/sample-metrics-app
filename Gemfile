@@ -33,6 +33,7 @@ gem "opentelemetry-metrics-sdk",        "~> 0.5.0"
 gem "opentelemetry-sdk",               "~> 1.5.0"
 gem "shoryuken",                      "~> 5.2.3"
 gem "aws-sdk-sqs",                    "~> 1.44.0"
+gem "aws-sdk-core",                   "3.124.0"      
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"

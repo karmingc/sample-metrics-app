@@ -69,14 +69,12 @@ GEM
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
     aws-eventstream (1.3.2)
-    aws-partitions (1.1087.0)
-    aws-sdk-core (3.222.1)
-      aws-eventstream (~> 1, >= 1.3.0)
-      aws-partitions (~> 1, >= 1.992.0)
-      aws-sigv4 (~> 1.9)
-      base64
-      jmespath (~> 1, >= 1.6.1)
-      logger
+    aws-partitions (1.1088.0)
+    aws-sdk-core (3.124.0)
+      aws-eventstream (~> 1, >= 1.0.2)
+      aws-partitions (~> 1, >= 1.525.0)
+      aws-sigv4 (~> 1.1)
+      jmespath (~> 1.0)
     aws-sdk-sqs (1.44.0)
       aws-sdk-core (~> 3, >= 3.120.0)
       aws-sigv4 (~> 1.1)
@@ -317,6 +315,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  aws-sdk-core (= 3.124.0)
   aws-sdk-sqs (~> 1.44.0)
   bootsnap
   capybara
