@@ -6,10 +6,12 @@ class HelloWorker
   # it is properly sending,
   # but it's not pulling
   def perform(sqs_msg, name)
+    Shoryuken.logger.info("Hello #{name} from #{Process.pid}")
     counter.add(
       1,
       attributes: {
-        "name" => name
+        "name" => name,
+        "worker" => "hello_worker"
       }
     )
     Rails.logger.info("something should work no?")

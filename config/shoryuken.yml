@@ -1,5 +1,10 @@
 groups:
-  hello_events:
+  hello:
     concurrency: 1
     queues:
       - hello
+  bye:
+    concurrency: 1
+    queues:
+      - bye
+
